@@ -1,12 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roadmap | SkillPrism</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/app.js" defer></script>
-  </head>
-  <body>
-  </body>
+    <title>Roadmaps | SkillPrism AI</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+
+<div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-900 text-white">
+
+        <div class="p-6 border-b border-slate-700">
+            <h1 class="text-2xl font-bold">SkillPrism AI</h1>
+        </div>
+
+        <nav class="p-4">
+            <ul class="space-y-3">
+                <li><a href="dashboard.html" class="block px-4 py-3 rounded-lg hover:bg-slate-800">Dashboard</a></li>
+                <li><a href="resume.html" class="block px-4 py-3 rounded-lg hover:bg-slate-800">Resume Analysis</a></li>
+                <li><a href="skills.html" class="block px-4 py-3 rounded-lg hover:bg-slate-800">Skill Tracker</a></li>
+                <li><a href="roadmap.html" class="block px-4 py-3 rounded-lg bg-indigo-600">Roadmaps</a></li>
+                <li><a href="interview.html" class="block px-4 py-3 rounded-lg hover:bg-slate-800">Mock Interview</a></li>
+                <li><a href="chat.html" class="block px-4 py-3 rounded-lg hover:bg-slate-800">AI Coach</a></li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+
+        <!-- Navbar -->
+        <header class="bg-white shadow px-8 py-4 flex justify-between items-center">
+
+            <h2 class="text-2xl font-bold">
+                Learning Roadmap
+            </h2>
+
+            <button
+                class="bg-indigo-600 text-white px-4 py-2 rounded-lg">
+                Generate AI Roadmap
+            </button>
+
+        </header>
+
+        <section class="p-8">
+
+            <!-- Roadmap Cards -->
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold text-lg">
+                        Backend Developer
+                    </h3>
+                    <p class="text-gray-500 mt-2">
+                        FastAPI, SQL, Redis, Docker
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold text-lg">
+                        Full Stack Developer
+                    </h3>
+                    <p class="text-gray-500 mt-2">
+                        JS, APIs, Databases, Cloud
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="font-bold text-lg">
+                        AI Engineer
+                    </h3>
+                    <p class="text-gray-500 mt-2">
+                        LLMs, RAG, Vector Databases
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Timeline -->
+
+            <div class="bg-white rounded-xl shadow p-8">
+
+                <h3 class="text-xl font-semibold mb-8">
+                    Backend Developer Journey
+                </h3>
+
+                <div class="space-y-6">
+
+                    <div class="border-l-4 border-indigo-600 pl-5">
+                        <h4 class="font-semibold">Week 1</h4>
+                        <p class="text-gray-600">
+                            Python Advanced Concepts
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-indigo-600 pl-5">
+                        <h4 class="font-semibold">Week 2</h4>
+                        <p class="text-gray-600">
+                            SQL & Query Optimization
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-indigo-600 pl-5">
+                        <h4 class="font-semibold">Week 3</h4>
+                        <p class="text-gray-600">
+                            FastAPI & REST APIs
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-indigo-600 pl-5">
+                        <h4 class="font-semibold">Week 4</h4>
+                        <p class="text-gray-600">
+                            Redis Caching
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-indigo-600 pl-5">
+                        <h4 class="font-semibold">Week 5</h4>
+                        <p class="text-gray-600">
+                            Docker & Containers
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-indigo-600 pl-5">
+                        <h4 class="font-semibold">Week 6</h4>
+                        <p class="text-gray-600">
+                            System Design Fundamentals
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
 </html>
