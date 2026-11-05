@@ -1,12 +1,191 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | SkillPrism</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/app.js" defer></script>
-  </head>
-  <body>
-  </body>
+    <title>SkillPrism AI Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100">
+
+<div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-900 text-white">
+
+        <div class="p-6 border-b border-slate-700">
+            <h1 class="text-2xl font-bold">SkillPrism AI</h1>
+        </div>
+
+        <nav class="p-4">
+
+            <ul class="space-y-3">
+
+                <li>
+                    <a href="dashboard.html"
+                        class="block bg-indigo-600 rounded-lg px-4 py-3">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html"
+                        class="block hover:bg-slate-800 px-4 py-3 rounded-lg">
+                        Resume Analysis
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skills.html"
+                        class="block hover:bg-slate-800 px-4 py-3 rounded-lg">
+                        Skill Tracker
+                    </a>
+                </li>
+
+                <li>
+                    <a href="roadmap.html"
+                        class="block hover:bg-slate-800 px-4 py-3 rounded-lg">
+                        Roadmaps
+                    </a>
+                </li>
+
+                <li>
+                    <a href="interview.html"
+                        class="block hover:bg-slate-800 px-4 py-3 rounded-lg">
+                        Mock Interview
+                    </a>
+                </li>
+
+                <li>
+                    <a href="chat.html"
+                        class="block hover:bg-slate-800 px-4 py-3 rounded-lg">
+                        AI Coach
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+
+        <!-- Navbar -->
+        <header class="bg-white shadow px-8 py-4">
+
+            <div class="flex justify-between items-center">
+
+                <h2 class="text-2xl font-bold">
+                    Dashboard
+                </h2>
+
+                <div>
+                    Welcome, User 👋
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Content -->
+        <section class="p-8">
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+
+                <div class="bg-white rounded-xl shadow p-6">
+                    <h3 class="text-gray-500">ATS Score</h3>
+                    <p class="text-3xl font-bold text-indigo-600 mt-2">
+                        82%
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6">
+                    <h3 class="text-gray-500">Interview Score</h3>
+                    <p class="text-3xl font-bold text-green-600 mt-2">
+                        76%
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6">
+                    <h3 class="text-gray-500">Skills Tracked</h3>
+                    <p class="text-3xl font-bold text-blue-600 mt-2">
+                        12
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6">
+                    <h3 class="text-gray-500">Roadmaps</h3>
+                    <p class="text-3xl font-bold text-purple-600 mt-2">
+                        3
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Activity -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <div class="bg-white rounded-xl shadow p-6">
+
+                    <h3 class="text-xl font-semibold mb-4">
+                        Recent Activity
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-600">
+
+                        <li>✅ Resume uploaded</li>
+
+                        <li>✅ Roadmap generated</li>
+
+                        <li>✅ Interview completed</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="bg-white rounded-xl shadow p-6">
+
+                    <h3 class="text-xl font-semibold mb-4">
+                        Quick Actions
+                    </h3>
+
+                    <div class="grid grid-cols-2 gap-4">
+
+                        <button
+                            class="bg-indigo-600 text-white p-3 rounded-lg">
+                            Upload Resume
+                        </button>
+
+                        <button
+                            class="bg-green-600 text-white p-3 rounded-lg">
+                            Start Interview
+                        </button>
+
+                        <button
+                            class="bg-blue-600 text-white p-3 rounded-lg">
+                            Add Skill
+                        </button>
+
+                        <button
+                            class="bg-purple-600 text-white p-3 rounded-lg">
+                            AI Coach
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
 </html>
