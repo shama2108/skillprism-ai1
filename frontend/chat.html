@@ -1,12 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat | SkillPrism</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/app.js" defer></script>
-  </head>
-  <body>
-  </body>
+    <title>AI Career Coach | SkillPrism AI</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+
+<div class="flex min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-slate-900 text-white">
+
+        <div class="p-6 border-b border-slate-700">
+            <h1 class="text-2xl font-bold">SkillPrism AI</h1>
+        </div>
+
+        <nav class="p-4">
+            <ul class="space-y-3">
+
+                <li>
+                    <a href="dashboard.html"
+                    class="block px-4 py-3 rounded-lg hover:bg-slate-800">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="resume.html"
+                    class="block px-4 py-3 rounded-lg hover:bg-slate-800">
+                        Resume Analysis
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skills.html"
+                    class="block px-4 py-3 rounded-lg hover:bg-slate-800">
+                        Skill Tracker
+                    </a>
+                </li>
+
+                <li>
+                    <a href="roadmap.html"
+                    class="block px-4 py-3 rounded-lg hover:bg-slate-800">
+                        Roadmaps
+                    </a>
+                </li>
+
+                <li>
+                    <a href="interview.html"
+                    class="block px-4 py-3 rounded-lg hover:bg-slate-800">
+                        Mock Interview
+                    </a>
+                </li>
+
+                <li>
+                    <a href="chat.html"
+                    class="block px-4 py-3 rounded-lg bg-indigo-600">
+                        AI Coach
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="flex-1 flex flex-col">
+
+        <!-- Header -->
+
+        <header class="bg-white shadow px-8 py-4">
+
+            <h2 class="text-2xl font-bold">
+                AI Career Coach
+            </h2>
+
+        </header>
+
+        <!-- Chat Area -->
+
+        <div class="flex-1 p-8 overflow-y-auto">
+
+            <!-- AI Message -->
+
+            <div class="mb-6">
+
+                <div class="bg-white p-5 rounded-xl shadow max-w-3xl">
+
+                    <p class="font-semibold text-indigo-600 mb-2">
+                        AI Coach
+                    </p>
+
+                    <p>
+                        Hello! I'm your career coach.
+                        Ask me about interviews, DSA, DBMS,
+                        System Design, Resume Reviews or Career Planning.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- User Message -->
+
+            <div class="mb-6 flex justify-end">
+
+                <div class="bg-indigo-600 text-white p-5 rounded-xl max-w-3xl">
+
+                    How do I prepare for SDE interviews in 2 months?
+
+                </div>
+
+            </div>
+
+            <!-- AI Response -->
+
+            <div>
+
+                <div class="bg-white p-5 rounded-xl shadow max-w-4xl">
+
+                    <p class="font-semibold text-indigo-600 mb-2">
+                        AI Coach
+                    </p>
+
+                    <p>
+                        Focus on DSA, DBMS, Operating Systems,
+                        SQL and System Design.
+                        Create a weekly learning plan and
+                        practice mock interviews regularly.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Input Area -->
+
+        <div class="bg-white border-t p-4">
+
+            <div class="flex gap-3">
+
+                <input
+                    type="text"
+                    placeholder="Ask your career question..."
+                    class="flex-1 border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                >
+
+                <button
+                    class="bg-indigo-600 text-white px-6 rounded-lg">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
 </html>
+
